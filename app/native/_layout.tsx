@@ -10,7 +10,8 @@ export default function _Layout() {
 			screenOptions={{
 				tabBarShowLabel: false,
 				tabBarStyle: {
-					backgroundColor: "red",
+					borderColor: "none",
+					backgroundColor: "#12151cff",
 				},
 				tabBarButton: (props) => (
 					<PlatformPressable
@@ -36,16 +37,16 @@ export default function _Layout() {
 				}}
 			/>
 			<Tabs.Screen
-				name="search"
+				name="bonfire"
 				options={{
-					title: "search",
+					title: "bonfire",
 					headerShown: false,
 					tabBarIcon: ({ focused }) => (
 						<NativeTab
-							name={"search"}
+							name={"bonfire"}
 							focused={focused}
-							selectedIcon={"search-sharp"}
-							defaultIcon={"search-outline"}
+							selectedIcon={"bonfire"}
+							defaultIcon={"bonfire-outline"}
 						/>
 					),
 				}}
@@ -66,16 +67,16 @@ export default function _Layout() {
 				}}
 			/>
 			<Tabs.Screen
-				name="call"
+				name="profile"
 				options={{
-					title: "Call",
+					title: "Profile",
 					headerShown: false,
 					tabBarIcon: ({ focused }) => (
 						<NativeTab
-							name={"call"}
+							name={"profile"}
 							focused={focused}
-							selectedIcon={"call-sharp"}
-							defaultIcon={"call-outline"}
+							selectedIcon={"person"}
+							defaultIcon={"person-outline"}
 						/>
 					),
 				}}
